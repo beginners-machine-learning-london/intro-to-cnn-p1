@@ -25,6 +25,10 @@ In this training, we will approach the problem from the ground up. Reviewing how
 
 This workshop consists of the following activities:
 
+# Slides
+
+You can access the slides [here](https://docs.google.com/presentation/d/1c532bc--gy3JRh42WdqD2hGESm2XGvQBKplXlACMAtY/edit?usp=sharing)
+
 ## Setup
 
 1. Clone this git repository using `git clone https://github.com/beginners-machine-learning-london/intro-to-cnn-p1`
