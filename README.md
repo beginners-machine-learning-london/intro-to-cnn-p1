@@ -33,7 +33,6 @@ This workshop consists of the following activities:
    1. Create the environment using `python -m venv venv`
    2. Activate the environment using `source venv/bin/activate`
    3. Install the required packages using `pip install -r requirements.txt`
-4. Open the notebook located at `notebooks/exercises.ipynb` and complete the exercises
 
 ## Featured technologies
 
