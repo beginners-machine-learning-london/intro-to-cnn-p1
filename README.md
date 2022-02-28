@@ -19,6 +19,7 @@ Repo for hosting workshop materials delivered on 28/02/2022
 In this training, we will approach the problem from the ground up. Reviewing how CNNs work without getting bogged down into the detail and getting some models training as fast as possible. The workshop materials will be delivered in a combination of coding exercises and lectures.
 
 - Python programming language: See [Udacity - Intro to Python](https://eu.udacity.com/course/introduction-to-python--ud1110)
+- Tensorflow Fundamental: See [Microsoft Learn](https://docs.microsoft.com/en-us/learn/paths/tensorflow-fundamentals)
 
 ## Steps
 

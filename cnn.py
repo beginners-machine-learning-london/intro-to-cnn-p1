@@ -8,9 +8,17 @@ class NeuralNetwork(tf.keras.Model):
     def __init__(self):
         super(NeuralNetwork, self).__init__()
         self.sequence = tf.keras.Sequential([
-            tf.keras.layers.Flatten(input_shape=(28, 28)),
-            tf.keras.layers.Dense(128, activation='relu'),
-            tf.keras.layers.Dense(10)
+            tf.keras.layers.Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)),
+            tf.keras.layers.MaxPooling2D((2, 2)),
+            tf.keras.layers.Conv2D(64, (3, 3), activation='relu'),
+            tf.keras.layers.MaxPooling2D((2, 2)),
+            tf.keras.layers.Conv2D(64, (3, 3), activation='relu'),
+            tf.keras.layers.Flatten(),
+            tf.keras.layers.Dense(120, activation='relu'),
+            tf.keras.layers.Dense(120, activation='relu'),
+            tf.keras.layers.Dense(10, activation='relu'),
+            # Softmax activation function converts the raw output predictions to a probability distribution
+            tf.keras.layers.Softmax()
         ])
 
     def call(self, x: tf.Tensor) -> tf.Tensor:
@@ -37,7 +45,7 @@ def main():
     print(model.summary())
     model.fit(train_images, train_labels, epochs=10)
     loss, acc = model.evaluate(test_images, test_labels, verbose=2)
-    output = model.predict(test_images, from_logits=True)
+    output = model.predict(test_images)
     print(output)
 
 
