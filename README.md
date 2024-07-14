@@ -1,4 +1,4 @@
-# intro-to-cnn-p1
+# Introduction to Convolutional Neural Networks (CNNs)
 Repo for hosting workshop materials delivered on 28/02/2022
 
 ## Questions you will answer in this workshop
